@@ -8,25 +8,25 @@ public class Main {
         double[] doubleMassive = {1.57, 7.654, 9.986};
         String[] stringMassive = {"Это", "Мой", "Массив"};
         // Задача 2
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < intMassive.length; i++) {
             System.out.print(intMassive[i]);
-            if (i < 2) {
+            if (i < intMassive.length-1) {
                 System.out.print(", ");
             }
 
         }
         System.out.println();
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < doubleMassive.length; i++) {
             System.out.print(doubleMassive[i]);
-            if (i < 2) {
+            if (i < doubleMassive.length-1) {
                 System.out.print(", ");
             }
 
         }
         System.out.println();
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < stringMassive.length; i++) {
             System.out.print(stringMassive[i]);
-            if (i < 2) {
+            if (i < stringMassive.length-1) {
                 System.out.print(", ");
             }
 
@@ -34,7 +34,7 @@ public class Main {
         System.out.println();
         System.out.println();
         //Задача 3
-        for (int i = 2; i >=0; i--) {
+        for (int i = intMassive.length-1; i >=0; i--) {
             System.out.print(intMassive[i]);
             if (i > 0) {
                 System.out.print(", ");
@@ -42,7 +42,7 @@ public class Main {
 
         }
         System.out.println();
-        for (int i = 2; i >=0; i--) {
+        for (int i = doubleMassive.length-1; i >=0; i--) {
             System.out.print(doubleMassive[i]);
             if (i > 0) {
                 System.out.print(", ");
@@ -50,7 +50,7 @@ public class Main {
 
         }
         System.out.println();
-        for (int i = 2; i >=0; i--) {
+        for (int i = stringMassive.length-1; i >=0; i--) {
             System.out.print(stringMassive[i]);
             if (i >0) {
                 System.out.print(", ");
@@ -58,17 +58,19 @@ public class Main {
 
         }
         System.out.println();
+        System.out.println();
         //Задача 4
-        for (int i =  0; i<3; i++) {
+        for (int i =  0; i<intMassive.length; i++) {
             if(intMassive[i] % 2 ==1){
                 intMassive[i]+=1;
             }
             System.out.print(intMassive[i]);
-            if (i <2) {
+            if (i < intMassive.length-1) {
                 System.out.print(", ");
             }
-            System.out.println();
+
         }
+        System.out.println();
 
     }
 }
